@@ -1,0 +1,83 @@
+/***************** Imports *******************/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/***************** Variables *******************/
+:root {
+	/* Colors */
+	--black-color-00: #000000;
+	--btn-color: #00686c;
+	--btn--hover-color: #32c2b9;
+	--white-color-00: #ffffff;
+
+	/* Font Family */
+	--title-ff: 'Bebas Neue', 'Arial Black', 'Arial', sans-serif;
+	--text-ff: 'Poppins', 'Helvetica', sans-serif;
+
+	/* Font Weight */
+	--normal-fw: 400;
+	--medium-fw: 500;
+
+	/* Font Size */
+	--base-fs: 1rem;
+	--xl-fs: 2.25rem;
+	--xxl-fs: 3.75rem;
+
+	/* Border Radius */
+	--btn-radius: 0.45rem;
+
+	/* Width */
+	--container-mw: 1280px;
+
+	/* Padding */
+	--container-pi: 0.85rem;
+}
+
+/***************** General *******************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--text-ff);
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+/***************** Reusable *******************/
+.container {
+	max-width: var(--container-mw);
+	padding-inline: var(--container-pi);
+	margin: 0 auto;
+}
+
+.btn {
+	color: var(--black-color-00);
+	border-radius: var(--btn-radius);
+}
+
+/***************** CONTENT *******************/
+/* TODO: Create CONTENT style */
+
+/***************** NAVBAR *******************/
+/* TODO: Create NAVBAR style */
+/************** End of NAVBAR ***************/
+
+/***************** TEXT CONTENT *******************/
+/* TODO: Create TEXT CONTENT style */
+/************** End of TEXT CONTENT ***************/
+
+/***************** PARTICLE *******************/
+/* TODO: Create PARTICLE style */
+/************** End of PARTICLE ***************/
+/************** End of CONTENT ***************/
+
+/***************** Responsiveness *******************/
+/* TODO: Create Responsiveness style */
+/************** End of Responsiveness ***************/
