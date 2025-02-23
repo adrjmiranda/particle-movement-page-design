@@ -19,6 +19,7 @@
 	},
 	"homepage": "https://github.com/adrjmiranda/particle-movement-page-design#readme",
 	"devDependencies": {
+		"@types/scrollreveal": "^0.0.11",
 		"ts-loader": "^9.5.2",
 		"typescript": "^5.7.3",
 		"webpack": "^5.98.0",
