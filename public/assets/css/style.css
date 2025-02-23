@@ -103,6 +103,8 @@ a {
 	text-transform: capitalize;
 	transition: background-color 0.35s ease-in-out;
 	pointer-events: all;
+	font-size: var(--base-fs);
+	text-align: center;
 }
 
 .btn:hover {
@@ -119,6 +121,7 @@ a {
 	background-repeat: no-repeat;
 	position: relative;
 	overflow-y: hidden;
+	padding-block: 1.25rem;
 }
 
 /***************** NAVBAR *******************/
@@ -127,13 +130,13 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* padding-block: 1rem; */
+	padding-block: 1rem;
 }
 /************** End of NAVBAR ***************/
 
 /***************** TEXT CONTENT *******************/
 #text-content {
-	min-height: calc(100vh - 80px);
+	min-height: calc(100vh - 80px - 2.5rem);
 	z-index: 10;
 	position: relative;
 	display: flex;
@@ -157,5 +160,50 @@ a {
 /************** End of CONTENT ***************/
 
 /***************** Responsiveness *******************/
-/* TODO: Create Responsiveness style */
+@media screen and (max-width: 768px) {
+	.title,
+	.subtitle {
+		max-width: 80%;
+	}
+
+	#text-content {
+		padding-top: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.title,
+	.subtitle {
+		max-width: 90%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	:root {
+		--base-fs: 0.925rem;
+		--lg-fs: 1.15rem;
+		--xl-fs: 2.25rem;
+	}
+
+	.title,
+	.subtitle {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.btn {
+		width: 100%;
+		margin-top: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	:root {
+		--container-pi: 0.35rem;
+	}
+
+	#navbar {
+		justify-content: center;
+	}
+}
 /************** End of Responsiveness ***************/
