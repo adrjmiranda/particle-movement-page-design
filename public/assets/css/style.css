@@ -17,11 +17,12 @@
 	/* Font Weight */
 	--normal-fw: 400;
 	--medium-fw: 500;
+	--bold-fw: 700;
 
 	/* Font Size */
 	--base-fs: 1rem;
-	--xl-fs: 2.25rem;
-	--xxl-fs: 3.75rem;
+	--lg-fs: 1.25rem;
+	--xl-fs: 2.75rem;
 
 	/* Border Radius */
 	--btn-radius: 0.45rem;
@@ -46,6 +47,10 @@ body {
 	scroll-behavior: smooth;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 a {
 	text-decoration: none;
 }
@@ -57,24 +62,97 @@ a {
 	margin: 0 auto;
 }
 
+.logo {
+	font-size: var(--base-fs);
+	color: var(--white-color-00);
+	text-transform: uppercase;
+	font-weight: var(--bold-fw);
+	position: relative;
+	z-index: 10;
+	transition: transform 0.25s ease-in-out;
+}
+
+.logo:hover {
+	transform: scale(1.05);
+}
+
+.title,
+.subtitle {
+	color: var(--white-color-00);
+	font-weight: var(--normal-fw);
+	font-family: var(--title-ff);
+	max-width: 60%;
+}
+
+.title {
+	font-size: var(--xl-fs);
+}
+
+.subtitle {
+	font-size: var(--lg-fs);
+	font-family: var(--text-ff);
+	font-weight: var(--medium-fw);
+}
+
 .btn {
 	color: var(--black-color-00);
 	border-radius: var(--btn-radius);
+	padding: 0.85rem 2.85rem;
+	background-color: var(--btn-color);
+	font-weight: var(--medium-fw);
+	text-transform: capitalize;
+	transition: background-color 0.35s ease-in-out;
+	pointer-events: all;
+}
+
+.btn:hover {
+	background-color: var(--btn--hover-color);
 }
 
 /***************** CONTENT *******************/
-/* TODO: Create CONTENT style */
+#content {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+		url('../img/sky-stars-and-tree.jpg');
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow-y: hidden;
+}
 
 /***************** NAVBAR *******************/
-/* TODO: Create NAVBAR style */
+#navbar {
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* padding-block: 1rem; */
+}
 /************** End of NAVBAR ***************/
 
 /***************** TEXT CONTENT *******************/
-/* TODO: Create TEXT CONTENT style */
+#text-content {
+	min-height: calc(100vh - 80px);
+	z-index: 10;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 0.85rem;
+	pointer-events: none;
+}
 /************** End of TEXT CONTENT ***************/
 
 /***************** PARTICLE *******************/
-/* TODO: Create PARTICLE style */
+#particles-js {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
 /************** End of PARTICLE ***************/
 /************** End of CONTENT ***************/
 
